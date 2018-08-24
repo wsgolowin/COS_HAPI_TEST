@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server",
-    "test": "echo \"HAPI: should be add testes\" "
+    "test": "echo \"HAPI:  should be add tests\" "
   },
   "husky": {
     "hooks": {
