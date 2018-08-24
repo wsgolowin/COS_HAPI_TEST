@@ -10,14 +10,15 @@ const DEFAULT_PORT = 8000;
 const RADIX        = 10;
 
 const server = Hapi.server( {
-    host: process.env.HOST || DEFAULT_HOST,
-    port: parseInt( process.env.PORT, RADIX ) || DEFAULT_PORT,
+    host  : process.env.HOST || DEFAULT_HOST,
+    port  : parseInt( process.env.PORT, RADIX ) || DEFAULT_PORT,
+    debug : false,
+    app   : {},
     routes: {
         files: {
             relativeTo: Path.join( __dirname, "public" )
         }
     },
-    app: {}
 } );
 
 
