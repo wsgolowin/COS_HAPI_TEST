@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server",
-    "test" : "node tests"
+    "test": "node tests"
   },
   "husky": {
     "hooks": {
