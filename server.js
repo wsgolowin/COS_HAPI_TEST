@@ -1,13 +1,13 @@
 "use strict";
 
-const Hapi = require( "hapi" );
-const Path = require( "path" );
-// const routes       = require('./routes');
+const Hapi         = require( "hapi" );
+const Path         = require( "path" );
+const routes       = require( "./routes" );
 // const plugins      = require('./plugins');
 
 const DEFAULT_HOST = "localhost";
 const DEFAULT_PORT = 8000;
-const RADIX = 10;
+const RADIX        = 10;
 
 const server = Hapi.server( {
     host: process.env.HOST || DEFAULT_HOST,
@@ -24,7 +24,7 @@ const server = Hapi.server( {
 const init = async() => {
     try {
     // await server.register(plugins);
-    // await server.register(routes);
+        await server.register( routes );
         await server.start();
         console.log( `Server running at" ${server.info.uri}` );
 
