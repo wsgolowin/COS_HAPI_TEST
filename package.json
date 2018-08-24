@@ -5,13 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server",
-    "test" : "node ./tests/index"
+    "test" : "node ./tests"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "...",
-      "...": "..."
+      "pre-commit": "npm test"
     }
   },
   "keywords": [],
