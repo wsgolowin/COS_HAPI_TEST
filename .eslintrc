@@ -3,6 +3,9 @@
         "node":true,
         "es6":true
     },
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
     "rules":{
         "comma-dangle":[
             2,
@@ -190,18 +193,12 @@
             2,
             "always"
         ],
-        "one-var":[
-            2,
-            "always"
-        ],
+        "one-var":"off",
         "operator-linebreak":[
             2,
             "none"
         ],
-        "quote-props":[
-            2,
-            "always"
-        ],
+        "quote-props":"off",
         "quotes":[
             2,
             "double",
