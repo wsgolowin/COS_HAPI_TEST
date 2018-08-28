@@ -3,12 +3,12 @@
 "use strict";
 
 module.exports = {
-    name: "THIRD PARTY ORDERS",
-    register: async( server/* , options */ ) => {
+    name     : "THIRD PARTY ORDERS",
+    register : async( server/* , options */ ) => {
         server.route( {
-            method: "GET",
-            path: "/api/third_party_orders",
-            handler: async( /* request, h */ ) => {
+            method  : [ "PUT", "POST", "GET", "DELETE" ],
+            path    : "/api/third_party_orders",
+            handler : async( /* request, h */ ) => {
                 return "THIRD PARTY ORDERS";
             }
         } );
