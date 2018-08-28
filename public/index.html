@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to COS api</title>
+</head>
+<style>
+
+:root {
+	--default_padding : 10px;
+	--header-color: hsla(200,100%,20%,0.9)
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	padding: 10px 0;
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.body_warpper {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	padding-left: var(--default_padding);
+	padding-bottom: var(--default_padding);
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+
+}
+
+.link_to_docs {
+	padding-left: var(--default_padding);
+	padding-bottom: var(--default_padding);
+	font-size: 2.2rem;
+}
+
+.main_header {
+	padding-bottom: calc(5 * var(--default_padding));
+	font-size: 3rem;
+	color : var(--header-color)
+}
+
+
+</style>
+<body>
+	<div class="body_warpper">
+		<div class="main_header">Welcome to <span style="font-weight: bold;">COS</span> api</div>
+		<div class="link_to_docs">
+			- <a href="http://localhost:8000/docs">
+				 See <span style="font-weight: bold;">COS</span> api documentation
+			</a>
+		</div>
+	</div>
+</body>
+</html>
