@@ -156,13 +156,10 @@
             2,
             "expression"
         ],
-        "indent":[
-            2,
-            4,
-            {
-                "SwitchCase":1
-            }
-        ],
+        "indent": [
+			"error",
+			"tab"
+		],
         "key-spacing": [
 			"error",
 			{

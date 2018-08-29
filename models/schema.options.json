@@ -1,0 +1,6 @@
+{
+	"runSettersOnQuery" : "true",
+	"useCreateIndex"    : "true",
+	"useNewUrlParser"   : "true",
+	"useFindAndModify"  : "false"
+}
